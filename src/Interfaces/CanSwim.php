@@ -2,3 +2,6 @@
 
 namespace App\Interfaces;
 
+interface CanSwim
+{
+}
