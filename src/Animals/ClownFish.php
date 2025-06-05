@@ -2,9 +2,11 @@
 
 namespace App\Animals;
 use App\Animal;
-class ClownFish extends Animal
+use App\Interfaces\CanSwim;
+
+class ClownFish extends Animal implements CanSwim
 {
-	protected function getNoise(): string
+	public function getNoise(): string
 	{
 		return 'HahaBloupBlip';
 	}

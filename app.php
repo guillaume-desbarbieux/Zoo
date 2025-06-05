@@ -11,6 +11,7 @@ use App\Animals\Fish;
 use App\Animals\Parrot;
 use App\Animals\Whale;
 use App\Animals\Zebra;
+use App\Zoo;
 
 //Début du code
 
@@ -43,7 +44,8 @@ $animals = array(
     new Dove("Love"));
 
     foreach ($animals as $animal) {
-        echo $animal->getName()." : ".$animal->noise()."\n";
+        Zoo::addAnimal($animal);
     }
+    Zoo::visitTheZoo();
     
 

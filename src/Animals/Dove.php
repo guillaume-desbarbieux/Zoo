@@ -2,9 +2,12 @@
 
 namespace App\Animals;
 use App\Animal;
-class Dove extends Animal
+use App\Interfaces\CanFly;
+use App\Interfaces\CanWalk;
+
+class Dove extends Animal implements CanFly, CanWalk
 {
-	protected function getNoise(): string
+	public function getNoise(): string
 	{
 		return 'Rou Rouuu';
 	}
