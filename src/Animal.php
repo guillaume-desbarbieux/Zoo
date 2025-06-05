@@ -15,7 +15,7 @@ abstract class Animal
         return $this->name;
     }
 
-    abstract public function getNoise():string;
+    abstract protected function getNoise():string;
 
     public function noise():string
     {
